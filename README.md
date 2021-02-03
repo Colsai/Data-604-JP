@@ -159,3 +159,17 @@ Mandatory many |-<
 optional many -o-<
 
 Double line means = all X must be relationship Y
+
+## Univary/Binary
+One person can be married to another person or not.
+1:1 relationship / one-or-no-other person. 
+Maximum cardinality can be 1 or N.
+Relationship types are often characterized by their maximum cardinalities.
+1:1,1:N(many),N:1, many to one and M: N.
+
+Modeling relationships: Relationship types and relationship instances. 
+
+## Relationship Types
+- Definition, degree, and roles
+- Cardinalities
+- Relationship Attribute Types
