@@ -82,6 +82,22 @@ Should not be:
 
 An entity is a real-world object or a concept ('student', 'bank account')
 What is the difference between these two?
+The real world object is a concrete entity. A player, an account-holder are real-world entities.
 
-The real world object is a concrete entity. 
+Entity type represents a business concept with an unambiguoys meaning to a particular set of users. Entity is one particular occurence or isntance of an entity type.
+A strong entity type is an entity type that has a key attribute type.
+A weak entity type is an entity type that does not have a key attribute of its own .
+*For example, related to owner entity type from which it borrows an attribute type to make up a key attribute type.*
+An abstract entity is an entity that exists only abstractly, such as department, team, or account. 
 
+Entities: Strong, Weak, Associative
+Attributes: Identifier, Partial Identifier
+
+## Example of strong and weak entity type
+DOUBLE LINE IS WEAK ENTITY (ON ITS OWN, CANNOT DEFINE MUCH)
+SINGLE LINE IS A DOUBLE ENTITY
+---
+Strong entity can exist outside of other entity types.
+- A Hotel is a strong entity. 
+- Hotel Room is a weak entity. 
+- A Room Number is a PARTIAL identifier. 
