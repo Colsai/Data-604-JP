@@ -101,3 +101,61 @@ Strong entity can exist outside of other entity types.
 - A Hotel is a strong entity. 
 - Hotel Room is a weak entity. 
 - A Room Number is a PARTIAL identifier. 
+
+*Medications could be weak entities, disease could be strong disease type. BUT everything really depends on the business case. You build your model to the business rule. The business requirement is very important because that is how you build your model*
+
+What is the identifying relationship?
+This is what links strong entities to weak entities (belongs to...) >---|-|-
+Each hotel can have multiple rooms. 1:N.
+
+## Dependents
+The identifying relationship between the employee and...
+
+## Relationship Attribute Types
+Relationship type can also have attribute types.
+These attribute types can be migrated to one of the participating entity types in case of 1:1 or 1:N relationship type. 
+
+##
+Employee has "works on" as the relationship. 
+
+## Attributes
+Attribute type represents a property of an entity type.
+Example: Name and Addres are attribute types of the entity type supplier
+Attribute is an instance of an attribute type
+
+## Attribute types
+Key attribute types
+Simple versus Composite Attribute Types
+Single-Valued versus multi-valued attribute types
+Derived attribute type
+Required Versus Optional Attribute Type 
+(SSN should be an optional)
+
+## Key Attribute Types
+'Identifier' or 'Primary Key' is an attribute that uniquely identifies individual instances of an entity type. 
+Uniquely identify individual instances of an entity type: SSN, product number, supplier number
+Two keys in one = composite key 
+Simple key is just ONE THING "supplier status"
+A Composite attribute type is an attribute type that can be decomposed into other meaningful attribute types. 
+Simple attribute has nothing in parenthesis (no division of the attribute type)
+Age is a DERIVED attribute from date of birth (you can get the age from date of birth)
+
+## Identifiers (keys)
+
+## Criteria for identifiers
+Choose identifiers that will not change and are not null
+Don't pick identifiers that can change/locations or people's names
+
+## Cardinality
+Cardinality Constraints- 
+Minimum cardinality, 0 then optional
+1+, mandatory
+
+Basketball team can have 0-N number of players. 
+Cardinality 
+Mandatory one -||-
+Optional one o-|-
+Mandatory many |-<
+optional many -o-<
+
+Double line means = all X must be relationship Y
