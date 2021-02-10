@@ -231,4 +231,19 @@ OR, different cells representing columns and attributes of that relationship.
 - Purchase_Order(PONR, PODATE, SUPNR)
 - PO_Line(PONR, PRODNR, QUANTITY)
 
-### 
+### Example 
+Acronym PK and FK (Primary Key and Foreign Key)
+Two underlined keys mean composite keys.
+Note: A domain is where you have values that are allowable. For example, the product types can only be {red, blue, green} 
+
+Note: You can skip the relational model, so long as it is normalized. Make sure to know which are multivalued attributes, etc. Doing the relational model first may be a good idea. The ER model is easier to relate to your users. Showing them a relational model can be confusing to others. 
+
+### Normalization:
+- Insertion, deletion, and update anomalies
+- Informal Normalization guidelines
+- Functional Dependencies and Prime Attribute Type
+- Normalization Forms
+- Controlled redundancies are OK. Uncontrolled redundancies are occurences where you might have inconsistency and need to make many changes.
+
+### Let's look at the types of normal forms.
+- 
