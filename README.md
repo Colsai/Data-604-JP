@@ -173,3 +173,62 @@ Modeling relationships: Relationship types and relationship instances.
 - Definition, degree, and roles
 - Cardinalities
 - Relationship Attribute Types
+
+## Class 3:
+student (studentnr, name, homephone, address)
+professor (ssn, name, homephone, officephone, e-mail)
+course (courseno, coursename)
+A tuple is like a row (the actual data values within the tables)
+
+We are looking to link attributes to different relations. 
+
+## Formal definitions
+- EER
+- Entity type | relation
+- Entity | tuple
+
+A relation essentially represents a set (no ordering + no duplicates!)
+
+### Values should be atomic and single value
+Course (coursenr, coursename, study points)
+*10, principles of Database Management, 6*
+Data should NOT have redundancies
+Data should NOT have multiple values (basketball, soccer) is an example of NOT being atomic. 
+
+### Columns should not have the same name (all should be unique)
+**Order of rows and columns actually does not matter**
+
+You can explictly state the order of rows and columns to sort through the data. 
+A domain specific range is possible in a relational model. For example, you can create domain specific values, such as the name of a state as a list of admissable domain values, but your data design in the relational model must be atomic. 
+
+### Types of Keys
+- Super key: Make sure that each row has unique values (no ROW should be the same)
+- Candidate keys: Has same properties as a primary key (if SSN AND Student number was included)
+- Primary Keys: Unique identifiers of a relation to guarantee that each row is unique 
+- Alternative Keys: Other keys that can be used but are not used as primary key
+- Foreign Keys: Very important for relational model. 
+Can be simple or composite (one field vs multiple fields that are combined)
+For example, SSN vs. name + phone, etc.
+
+### Foreign Keys in-depth.
+To describe a relationship in an ERD, we could put the 1:1 relationship number INTO the multi table. Supplier.
+
+### Some additional constraints that we can impose
+Domain constraint: The value of each attribute type A must be atomic and have a single value
+Key constraint: Every relation has a key that allows to uniquely identify tuples (ie it needs a primary key)
+Entity integrity Constraint: The attribute types that make up the primary key should always satisfy a NOT NULL. IE the Primary Key CANNOT be null.
+Referential integrity constraint: A foreign key FK has the same domain as the PK primary key, and it must be the same as in the parent table.
+
+### Example- relational data model notation
+Relation Name - (Primary Key: 1, Column 1, Column 2, Column 3)
+Relation Name - 2 (Primary Key: 2, Column 1, Column 2, Foreign Key)
+You should draw an arrow FROM the foreign key TO the primary key. 
+
+OR, different cells representing columns and attributes of that relationship.
+- Product (PRODNR, PRODNAME, PRODTYPE, AVAILABLE_QUANTITY)
+- Supplies(SUPNR, PRODNR, Purchase_Price, Deliv_period)
+- Supplier(SUPNR, SUPNAME, SUPADDRESS, SUPCITY, SUPSTATUS)
+- Purchase_Order(PONR, PODATE, SUPNR)
+- PO_Line(PONR, PRODNR, QUANTITY)
+
+### 
