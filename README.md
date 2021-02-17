@@ -246,4 +246,49 @@ Note: You can skip the relational model, so long as it is normalized. Make sure 
 - Controlled redundancies are OK. Uncontrolled redundancies are occurences where you might have inconsistency and need to make many changes.
 
 ### Let's look at the types of normal forms.
-- 
+
+
+# Class 4
+## Introduction
+Key characteristics of SQL
+- Free form/Case Insensitive
+- Most-used environment.
+- Can be used interactively OR executed by a program
+## Does it have a standard?
+- Mostly. However, there are some issues, and vendors have changed the language as well as added on.
+
+### SQL Vocabulary
+Catalog - A set of schemas that constitute the description of a database
+Schema - The structure that contains descriptions of objects created by a user (base tables, views, constraints)
+Data Definition Language (DDL) - Commands that define a database, including creating, altering, and dropping tables and establishing constraints.
+Data Manipulation Language (DML)- Commands that maintain and query a database
+Data Control Language (DCL) - Edit and modify data. 
+
+Database management systems connect users to a front end, which connects to the DBMS through DBMS queries. The DBMS can look through different environments: One for production, and one for development. 
+Production database contains its own data. It is the actual database being used. 
+Development database also contains data. More freedom to create data. 
+Some also have a test database, which takes the level of code propagated to production in a separate environment. Test environment has more production-like data. 
+
+Usually there is a development team, test team, and production team. 
+---
+### SQL Datatypes:
+- Strings: Character (n), Varying character (n)
+- Binary: Binary Large Object 
+...
+
+### DDL/DML/DCL:
+Define the database:
+Create tables, indexes, views, establish foreign keys, drop and truncate tables (physical design)
+DML: Load the database (insert, update, select)
+DCL: Grant, add, revoke
+
+### DDL Concepts:
+SQL Schema: Grouping of tables and other database objects such as views, constraints, and indexes which logically belong together.
+
+CREATE SCHEMA PURCHASE AUTHORIZATION 
+BBAESENS
+
+SQL table implements a relation from the relational model.
+- CREATE TABLE PRODUCT ...
+- CREATE TABLE PURCHASE.PRODUCT ... 
+
