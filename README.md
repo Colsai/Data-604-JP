@@ -292,3 +292,91 @@ SQL table implements a relation from the relational model.
 - CREATE TABLE PRODUCT ...
 - CREATE TABLE PURCHASE.PRODUCT ... 
 
+Select from where groupby having.
+
+Find products with standard price less than $275.
+Select productdescription, productstandardprice
+from product_t
+where productstandardprize < 275;
+
+comparison operators include 
+- = Equal to 
+
+Alias is an alternative column or table name
+select cust.customername as name, cust.customeraddress
+from customer cust where name = 'Home Furnishings' 
+
+AS NAME = alias (so it returns a result)
+
+Aggregation: Count/Sum/Average.
+Aggregate functions require groupby and select. 
+
+--Example
+Select productdescription, productfinish, productstandardprice
+from product_t
+where productdescription like '%Desk'
+or productdescription like '%table'
+and productstandardprice > 300
+. You can use the wildcard %.... before or ....% for after in the comparison. 
+if you want to just compare ONE character, than you can use underscore
+'_name'
+
+Parenthesis is super important- innermost is first. 
+
+After that, there is the order by clause. 
+Select customername, customercity, customerstate
+from customer_t
+where customerstate in ('FL', 'TX) 
+order by customerstate, customername DESC/ASC;
+
+### groupby 
+for use with aggregate functions:
+Scalar aggregate: Single value returned from SQL query with aggregate function
+Vector aggregate: Multiple values returned from SQL query with aggregate function (via GROUP BY)
+
+COUNT IS A SCALAR (SINGLE VALUE)
+
+Select customerstate, count(customerstate)
+from customer_T
+groupby CustomerState; 
+
+Select customerstate, count(customerstate)
+from customer_T
+group by customerstate
+having count (customerstate) > 1; 
+
+like a where clause, but it operates on groups (categories) not individual rows. Here, only those groups with total numbers greater than 1 will be included in the final result.
+
+## 
+Select productfinish, avg (productstandardprice)
+from product_t
+where productfinish in ('Cherry', 'Natural Ash', )
+Group by ProductFinish
+Having AVG (productstandardprice) < 750
+Order by ProductFinish; 
+
+Explanation: 
+Select productfinish and average from the product_t table where
+they have a finish of cherry or natural ash,
+group them by productfinish where they have an average of at least 750 standard price,
+then order them by product finish (for how much). 
+
+Order by is for sorting (helps to sort the result rows)
+Group by is for an aggregate function (what to group by)
+
+Group by is MIDDLE
+Order by is LAST
+
+## More...
+Select Thing
+From Table
+Where 
+Group by
+Having
+Order by (Sort by)
+
+Predicates (TSQL p.49)
+Three valued logic expression (true, false, null)
+Examples Where, Having, in, Between Like
+
+Exists is a predicate that differs as is true or false (not NULL).
