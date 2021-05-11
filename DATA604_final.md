@@ -5,12 +5,11 @@
 Where does Data Warehousing sit
 PDM Ch. 17 Ch. 18 590-601, 617-620
 ### 1. Concepts with respect to how cloud computing works
-How does cloud computing work, how is it different from on-premise data centers
-Why do people choose one over the other?
+- How does cloud computing work, how is it different from on-premise data centers  
+- Why do people choose one over the other?
 ### 2. Hadoop Frameworks:
-What are the different components of Hadoop, and how do they work together
-(What is used for transformation: Hive;
-SQL: Impala)
+- What are the different components of Hadoop, and how do they work together
+- (What is used for transformation: Hive; SQL: Impala)
 ### 3. What is Spark, what is MapReduce, and how does it work with respect to the Map Frameworks.
 ### 4. What is massively parralel processing? 
 ### 5. Distributed Computing:
@@ -29,9 +28,7 @@ No questions on nVidia CUDA, etc. Must understand how they are different from pr
 - What types of workloads, what OLTP, OLAP, Data Warehousing, what is used for decision-making and machine learning, etc.
 - What is a value-store database, what is a graph database, etc.
 
-Also on MongoDB
-
+## Also on MongoDB:
 Notes on Exercise:
 - No hands-on kind of work, only the conceptual aspects of each of these frameworks. 
 - (Won't be "What is X, how does it work?")
-- 
