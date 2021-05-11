@@ -11,7 +11,7 @@ PDM Ch. 17 Ch. 18 590-601, 617-620
 - What are the different components of Hadoop, and how do they work together
 - (What is used for transformation: Hive; SQL: Impala)
 ### 3. What is Spark, what is MapReduce, and how does it work with respect to the Map Frameworks.
-### 4. What is massively parralel processing? 
+### 4. What is massively parallel processing? 
 ### 5. Distributed Computing:
 How does SPARK framework work, how does it relate to the Big Data environment
 ### 6. Visualizations
