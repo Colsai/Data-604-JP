@@ -37,11 +37,12 @@ How does SPARK framework work, how does it relate to the Big Data environment.
 
 ### 6. Visualizations
 No questions on Tableau, but questions about data visualization
-- "What is virtualization?
-Virtualization uses software to create an abstraction layer over computer hardware that allows the hardware elements of a single computer—processors, memory, storage and more—to be divided into multiple virtual computers, commonly called virtual machines (VMs). Each VM runs its own operating system (OS) and behaves like an independent computer, even though it is running on just a portion of the actual underlying computer hardware." (IBM)
 
 ### 7. Distributed - Virtualization
 How do virtual machines work, how can you carve out a physical machine into multiple machines
+
+- "What is virtualization?
+Virtualization uses software to create an abstraction layer over computer hardware that allows the hardware elements of a single computer—processors, memory, storage and more—to be divided into multiple virtual computers, commonly called virtual machines (VMs). Each VM runs its own operating system (OS) and behaves like an independent computer, even though it is running on just a portion of the actual underlying computer hardware." (IBM)
 
 ### 8. Parallel Computing & GPU Computing
 No questions on nVidia CUDA, etc. Must understand how they are different from previous iterations.
