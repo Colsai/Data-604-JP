@@ -27,6 +27,8 @@ which is distributed over many servers.
 - (What is used for transformation: Hive; SQL: Impala)
 
 ### 3. What is Spark, what is MapReduce, and how does it work with respect to the Map Frameworks.
+MapReduce is a programming model that breaks down data so that it can be manipulated by different nodes in the network.
+Spark is a replacement framework that allows for additional processing of data. It is being used as a replacement for MapReduce. 
 
 ### 4. What is massively parallel processing? 
 
@@ -35,6 +37,8 @@ How does SPARK framework work, how does it relate to the Big Data environment.
 
 ### 6. Visualizations
 No questions on Tableau, but questions about data visualization
+- "What is virtualization?
+Virtualization uses software to create an abstraction layer over computer hardware that allows the hardware elements of a single computer—processors, memory, storage and more—to be divided into multiple virtual computers, commonly called virtual machines (VMs). Each VM runs its own operating system (OS) and behaves like an independent computer, even though it is running on just a portion of the actual underlying computer hardware." (IBM)
 
 ### 7. Distributed - Virtualization
 How do virtual machines work, how can you carve out a physical machine into multiple machines
@@ -44,6 +48,18 @@ No questions on nVidia CUDA, etc. Must understand how they are different from pr
 
 ### More:
 - What is the SQL landscape
+SQL still has great applicability, as many relational databases still exist. Relational Databases . Additionally, SQL-like languages are able to be used with. 
+OLTP: 
+OLAP: 
+Data Warehousing: 
+What is used for decision-making
+What is used for operational decisions
+
+All the Types of Databases:
+What is a Value-Store Database:
+What is a Graph Database:
+What is a Column Database: 
+
 - What is Cap Theorem https://en.wikipedia.org/wiki/CAP_theorem
 - How are noSQL databases implemented
 - What types of workloads, what OLTP, OLAP, Data Warehousing, what is used for decision-making and machine learning, etc.
