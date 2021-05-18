@@ -1,9 +1,35 @@
 # Notes for DATA604 Final Exam:
 6 essay questions, 300 words each
 
+Data Lake: All Data Objects, everything collected, good for many types of data, can include non-traditional data types
+Data Warehouse: Mainly for and intended for data that is already structured, specific metrics, good for operational users
+
+
 ## Questions
+Schema: Logical Collection of Database Objects
+
 - Star Schema: 
+Every dimension in a star schema is represented with the only one-dimension table.
+The dimension table should contain the set of attributes.
+The dimension table is joined to the fact table using a foreign key
+The dimension table are not joined to each other
+Fact table would contain key and measure
+The Star schema is easy to understand and provides optimal disk usage.
+The dimension tables are not normalized. For instance, in the above figure, Country_ID does not have Country lookup table as an OLTP design would have.
+The schema is widely supported by BI Tools
+
 - Snowflake Schema: 
+Snowflake Schema in data warehouse is a logical arrangement of tables in a multidimensional database such that the ER diagram resembles a snowflake shape. A Snowflake Schema is an extension of a Star Schema, and it adds additional dimensions. The dimension tables are normalized which splits data into additional tables.
+
+In the following Snowflake Schema example, Country is further normalized into an individual table.
+
+The main benefit of the snowflake schema it uses smaller disk space.
+Easier to implement a dimension is added to the Schema
+Due to multiple tables query performance is reduced
+The primary challenge that you will face while using the snowflake Schema is that you need to perform more maintenance efforts because of the more lookup tables.
+
+What is a Galaxy Schema?
+A Galaxy Schema contains two fact table that share dimension tables between them. It is also called Fact Constellation Schema. The schema is viewed as a collection of stars hence the name Galaxy Schema.
 
 What is ETL? (Extract Transform Load)
 A 3-step process where data is prepped for loading into the data warehouse. 
